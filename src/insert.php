@@ -9,3 +9,17 @@
 </head>
 <body>
     <h1>店舗を追加</h1>
+    <a href="menu.php">メニューに戻る</a>
+    <hr>
+    <form action method="post">
+    
+        <input type="text" name="">
+        <br>
+
+        <input type="text" name="">
+        <br>
+        <p><button type="submit" name="action" value="send">登録</button>
+        <br>
+    </form>
+</body>
+</html>    
