@@ -12,12 +12,16 @@
     <a href="menu.php">メニューに戻る</a>
     <hr>
     <form action method="post">
-    
-        <input type="text" name="">
+        店舗名：
+        <input type="text" name="newshop">
+        <br>
+        アクセス：
+        <input type="text" name="newaccess">
+        <br>
+        営業時間：
+        <input type="text" name="newtime">
         <br>
 
-        <input type="text" name="">
-        <br>
         <p><button type="submit" name="action" value="send">登録</button>
         <br>
     </form>

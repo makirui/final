@@ -12,8 +12,10 @@
     <a href="menu.php">メニューに戻る</a>
     <hr>
     <form action="" method="post">
-        <button type="submit" name="update" value="send">更新</button>
+        <button type="submit" name="update">更新</button>
         <p>
             <input type="radio" name="cafeid" value="">
         </p>
-</form>
+    </form>
+</body>
+</html>

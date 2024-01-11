@@ -8,4 +8,14 @@
     <title>削除</title>
 </head>
 <body>
-    <h1>店舗を削除</h1>
+    <h1>店舗削除</h1>
+    <a href="menu.php">メニューに戻る</a>
+    <hr>
+    <form action="" method="post">
+        <button type="submit" name="delete">削除</button>
+        <p>
+            <input type="checkbox" name="cafearray[]" value="">
+        </p>
+    </form>
+</body>
+</html>
