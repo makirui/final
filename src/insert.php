@@ -1,5 +1,3 @@
-<?php require './db-connect.php'; ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,7 +11,7 @@
     <h1>店舗を追加</h1>
     <a href="menu.php">メニューに戻る</a>
     <hr>
-    <form action method="post">
+    <form action="insert-output.php" method="post">
         店舗名：
         <input type="text" name="tenpo">
         <br>
