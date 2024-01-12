@@ -1,4 +1,4 @@
-<?php require 'db-connect.php'; ?>
+<?php require './db-connect.php'; ?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -17,7 +17,7 @@
     <?php
         $pdo=new PDO($connect, USER, PASS);
         foreach ($pdo->query{'select * from Cafe'} as $row){
-            
+
         }
     ?>
 
