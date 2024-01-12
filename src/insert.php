@@ -1,3 +1,5 @@
+<?php require 'db-connect.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,13 +15,13 @@
     <hr>
     <form action method="post">
         店舗名：
-        <input type="text" name="newshop">
+        <input type="text" name="tenpo">
         <br>
         アクセス：
-        <input type="text" name="newaccess">
+        <input type="text" name="access">
         <br>
         営業時間：
-        <input type="text" name="newtime">
+        <input type="text" name="time">
         <br>
 
         <p><button type="submit" name="action" value="send">登録</button>

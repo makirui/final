@@ -1,3 +1,5 @@
+<?php require 'db-connect.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -11,6 +13,14 @@
     <h1>店舗削除</h1>
     <a href="menu.php">メニューに戻る</a>
     <hr>
+    
+    <?php
+        $pdo=new PDO($connect, USER, PASS);
+        foreach ($pdo->query{'select * from Cafe'} as $row){
+            
+        }
+    ?>
+
     <form action="" method="post">
         <button type="submit" name="delete">削除</button>
         <p>
