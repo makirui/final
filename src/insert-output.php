@@ -20,9 +20,9 @@
     }else if (empty($_POST['time'])) {
         echo '営業時間を入力してください';
     }else if ($sql->execute([ $_POST['name'], $_POST['access'], $_POST['time'] ]) ) {
-        echo '<font color="red">追加しました</font>';
+        echo '追加しました';
     }else {
-        echo '<font color="red">追加しました</font>';
+        echo '追加に失敗しました';
     }
 ?>
     <br><hr><br>
