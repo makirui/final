@@ -19,7 +19,7 @@
         foreach ($pdo->query{'select * from Cafe'} as $row){
             echo '<p>';
             echo $row['tenpo_id'], ':';
-            echo $row['tenpo_name'], '<br>';
+            echo $row['name'], '<br>';
             echo $row['access'],'<br>';
             echo $row['time'];
             echo '</p>';
