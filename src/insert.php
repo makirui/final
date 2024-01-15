@@ -13,16 +13,13 @@
     <hr>
     <form action="insert-output.php" method="post">
         店舗名：
-        <input type="text" name="tenpo">
-        <br>
+        <input type="text" name="name"><br>
         アクセス：
-        <input type="text" name="access">
-        <br>
+        <input type="text" name="access"><br>
         営業時間：
-        <input type="text" name="time">
-        <br>
+        <input type="text" name="time"><br>
 
-        <p><button type="submit" name="action" value="send">登録</button>
+        <p><button type="submit">登録</button>
         <br>
     </form>
 </body>
