@@ -17,14 +17,14 @@
     
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    foreach ($pdo->query{'select * from Cafe'} as $row){
+    foreach ($pdo->query('select * from Cafe') as $row){
         echo '<tr>';
         echo '<td>',$row['tenpo_id'], '</td>';
         echo '<td>',$row['name'], '</td>';
         echo '<td>',$row['access'], '</td>';
         echo '<td>',$row['time'], '</td>';
         echo '<td>';
-        echo '<a href="delete-output.php?id=', $row['tenpo_id'], '">削除</a>';
+        echo '<a href="delete-output.php?tenpo_id=', $row['tenpo_id'], '">削除</a>';
         echo '</td>';
         echo '</tr>';
         echo "\n";

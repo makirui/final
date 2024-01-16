@@ -8,38 +8,34 @@
         <title>更新</title>
     </head>
     <body>
-        <h1>カフェ一覧</h1>
+        <h1>店舗情報更新</h1>
         <a href="menu.php">メニューに戻る</a>
         <hr>
-        <div class="th0">店舗ID</div>
-		<div class="th1">店舗名</div>
-		<div class="th1">アクセス</div>
-        <div class="th1">営業時間</div>
+        <table>
+        <tr><th>店舗ID</th><th>店舗名</th><th>アクセス</th><th>営業時間</th></tr>
+    
 <?php
     $pdo=new PDO($connect, USER, PASS);
-
-	foreach ($pdo->query('select * from Cafe') as $row) {
+    foreach ($pdo->query('select * from Cafe') as $row){
 		echo '<form action="update-output.php" method="post">';
-		//店舗ID
-		echo '<input type="hidden" name="id" value="',$row['tenpo_id'], '">';
-		echo '<div class="td0">',$row['tenpo_id'],'</div> ';
-		echo '<div class="td1">';
-		//店舗名
-		echo'<input type="text" name="name" value="',$row['name'], '">';
-		echo '</div> ';
-		echo '<div class="td1">';
-		//アクセス
-		echo'<input type="text" name="access" value="',$row['access'], '">';
-		echo '</div> ';
-        //営業時間
-		echo'<input type="text" name="time" value="',$row['time'], '">';
-		echo '</div> ';
-		//更新ボタン
-		echo'<div class="td2"><input type="submit" value="更新"></div>';
-		echo '</form>';
-		echo "\n";
-	}
-?>
+		
+        echo '<tr>';
+        echo '<input type="hidden" name="tenpo_id" value="',$row['tenpo_id'], '">';
+		echo '<td>',$row['tenpo_id'], '</td>';
 
+        echo '<td>','<input type="text" name="name" value="',$row['name'], '">', '</td>';
+
+        echo '<td>','<input type="text" name="access" value="',$row['access'], '">', '</td>';
+
+        echo '<td>','<input type="text" name="time" value="',$row['time'], '">', '</td>';
+        echo '<td>';
+        echo '<input type="submit" value="更新">';
+        echo '</td>';
+        echo '</tr>';
+		echo '</form>';
+        echo "\n";
+    }
+?>
+    </table>
     </body>
 </html>

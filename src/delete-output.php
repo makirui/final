@@ -8,7 +8,7 @@
         <title>delete-output</title>
     </head>
     <body>
-
+        <h1>店舗削除</h1>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     $sql=$pdo->prepare('delete from Cafe where tenpo_id=?');

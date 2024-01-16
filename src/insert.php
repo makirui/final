@@ -6,7 +6,7 @@
     <title>登録</title>
 </head>
 <body>
-    <h1>店舗を追加</h1>
+    <h1>店舗追加</h1>
     <a href="menu.php">メニューに戻る</a>
     <hr>
     <form action="insert-output.php" method="post">

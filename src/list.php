@@ -14,7 +14,7 @@
 
     <?php
         $pdo=new PDO($connect, USER, PASS);
-        foreach ($pdo->query{'select * from Cafe'} as $row){
+        foreach ($pdo->query('select * from Cafe') as $row){
             echo '<p>';
             echo $row['tenpo_id'], ':';
             echo $row['name'], '<br>';

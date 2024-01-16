@@ -8,11 +8,11 @@
         <title>update-output</title>
     </head>
     <body>
-        <h1>店舗更新</h1>
+        <h1>店舗情報更新</h1>
 <?php
     $pdo=new PDO($connect, USER, PASS);
     // SQL発行準備 prepareメソッド
-    $sql=$pdo->prepare('update Cafe set name=?, access=?, time=? where id=?');
+    $sql=$pdo->prepare('update Cafe set name=?, access=?, time=? where tenpo_id=?');
     if (empty($_POST['name'])) {
         echo '店舗名を入力してください';
     } else
